@@ -1,0 +1,40 @@
+{
+    "_id": "codeproject",
+    "startUrl": ["https://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=849212"],
+    "selectors": [
+    {
+        "id": "table_tr",
+        "type": "SelectorElement",
+        "parentSelectors": ["_root"],
+        "selector": "#Article td:nth-child(2)",
+        "multiple": true,
+        "delay": 0
+    },
+    {
+        "id": "title",
+        "type": "SelectorText",
+        "parentSelectors": ["table_tr"],
+        "selector": ".title",
+        "multiple": false,
+        "regex": "",
+        "delay": 0
+    },
+    {
+        "id": "desc",
+        "type": "SelectorText",
+        "parentSelectors": ["table_tr"],
+        "selector": ".entry.row",
+        "multiple": false,
+        "regex": "",
+        "delay": 0
+    },
+    {
+        "id": "summary",
+        "type": "SelectorText",
+        "parentSelectors": ["table_tr"],
+        "selector": ".summary",
+        "multiple": false,
+        "regex": "",
+        "delay": 0
+    }]
+}

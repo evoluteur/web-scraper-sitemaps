@@ -1,0 +1,102 @@
+{
+    "startUrl": "https://www.yelp.com/search?find_desc=Restaurants&start=[00-50:10]&sortby=rating&l=p:CA:San_Mateo::",
+    "selectors": [
+    {
+        "parentSelectors": [
+            "_root"
+        ],
+        "type": "SelectorElement",
+        "multiple": true,
+        "id": "resto",
+        "selector": ".biz-listing-large",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": false,
+        "id": "name",
+        "selector": ".biz-name > span",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": false,
+        "id": "price-range",
+        "selector": ".price-range",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": true,
+        "id": "categories",
+        "selector": ".category-str-list >a",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": false,
+        "id": "address",
+        "selector": "address",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": false,
+        "id": "phone",
+        "selector": ".biz-phone",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorElementAttribute",
+        "multiple": false,
+        "id": "stars",
+        "selector": ".i-stars",
+        "extractAttribute": "title",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorText",
+        "multiple": false,
+        "id": "reviews",
+        "selector": ".review-count",
+        "regex": "",
+        "delay": ""
+    },
+    {
+        "parentSelectors": [
+            "resto"
+        ],
+        "type": "SelectorLink",
+        "multiple": false,
+        "id": "url",
+        "selector": ".biz-name",
+        "delay": ""
+    }],
+    "_id": "yelp_sanmateo"
+}
